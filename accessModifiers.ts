@@ -29,6 +29,12 @@
         }
 
     }
+
+    const account1 = new BankAccount(1, "DBS", 100, "John");
+    account1.deposit(100);
+    account1.withdraw(50);
+    account1.checkBalance();
+
     class StudentAccount extends BankAccount {
         test() {
             console.log(this._balance); //protected
